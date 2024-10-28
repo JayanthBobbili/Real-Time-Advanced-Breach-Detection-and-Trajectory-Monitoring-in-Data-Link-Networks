@@ -1,10 +1,11 @@
+The project here is highly and strictly confidential hence any of the code or details can not be accessed instead please look into the following Jorunal and if there are any queries please contac me via my E-Mail (jayiit12993@gmail.com).
+
 REAL-TIME ADVANCED BREACH DETECTION AND TRAJECTORY MONITORING IN DATA LINK NETWORKS FOR ENHANCED PROPULSION AND COMBUSTION SYSTEMS
 
 Vaddi Keshava Reddy, Sankula Madhava, Bobbili Sai Jayanth, Charan Sai Nettam, Jagadish Prasad, Ashwani Kharola
 Graphic Era Deemed to be University, Dehradun, Uttarakhand, India
 5Research Centre Imarat (RCI). DRDO, Hyderabad, Telangana, India
 
-1vaddikeshavareddy@gmail.com, 2sankulamadhava162@gmail.com, 3jayiit12993@gmail.com,  4charansainettam@gmail.com, 5Jagadish.prasad.rci@gov.in, 6ashwanidaa@gmail.com
 Abstract: In this article, we have proposed a real-time system for breach detection and for trajectory monitoring in the data link networks for enhanced propulsion and combustion systems compliant with the MIL-STD 1553 standard. Using the advanced machine learning models – Support Vector Regression (SVR), Random Forest (RF), and Quantum Neural Networks (QNN) – this research insists to predict object trajectories and identifies the breach in communication links. The system in which it integrates the temporal gaps of missing value imputation, real-time processing and high-precision predictive analytics. Among these models, QNN demonstrated the best performance in high-throughput scenarios, ideal for real-time Graphical User Interface (GUI) applications. This research provides key insights into how these models enhance the operational capabilities of these propulsion and combustion systems, especially in aerospace applications.
 
              Keywords: Quantum Computing, MIL-STD 1553, Propulsion, Combustion,         
