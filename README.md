@@ -137,4 +137,4 @@ References
 13.	Danish,M. (2024). Enhancing Cyber Security through Predictive Analytics: Real-Time Threat Detection and Response.
 14.	Jiang, H. et al. (2022). An Energy-efficient Framework for Internet of Things Underlaying Heterogeneous Small Cell Networks.
 15.	Sultana, N., & Jairam, R. (2024). Real-Time Monitoring as a Supplementary Security Component in Modern Network Environments.
-![image](https://github.com/user-attachments/assets/9e193e72-dde5-4e64-85c5-2a32af9f82cf)
+
