@@ -1,7 +1,7 @@
 REAL-TIME ADVANCED BREACH DETECTION AND TRAJECTORY MONITORING IN DATA LINK NETWORKS FOR ENHANCED PROPULSION AND COMBUSTION SYSTEMS
 
-Vaddi Keshava Reddy1, Sankula Madhava2, Bobbili Sai Jayanth3,                Charan Sai Nettam4, Jagadish Prasad5, Ashwani Kharola6
-1,2,3,4,6Graphic Era Deemed to be University, Dehradun, Uttarakhand, India
+Vaddi Keshava Reddy, Sankula Madhava, Bobbili Sai Jayanth, Charan Sai Nettam, Jagadish Prasad, Ashwani Kharola
+Graphic Era Deemed to be University, Dehradun, Uttarakhand, India
 5Research Centre Imarat (RCI). DRDO, Hyderabad, Telangana, India
 
 1vaddikeshavareddy@gmail.com, 2sankulamadhava162@gmail.com, 3jayiit12993@gmail.com,  4charansainettam@gmail.com, 5Jagadish.prasad.rci@gov.in, 6ashwanidaa@gmail.com
@@ -22,6 +22,9 @@ By analysing the foundational works of various authors, this article provides a 
 Traditional methods of trajectory monitoring underperform in these dynamic environments, necessitating more sophisticated machine learning techniques capable of real-time processing.
 
 
+ 
+
+![image](https://github.com/user-attachments/assets/ef424dea-f6d5-4372-a74a-4378aa79cd7f)
 
  
 Fig.1. Data Link Network Architecture
@@ -42,6 +45,11 @@ For this research article, cubic spline interpolation was chosen due to it gener
 
 The data was pre-processed to remove anomalies and handle the missing values, a critical step given the nature of real-time data acquisition in defence environments. Cubic spline interpolation was used to reconstruct missing data points, ensuring that the dataset remained continuous. Once the data was cleaned and imputed, it was normalized to bring all the variables onto a common scale. This is essential for ensuring that ML & QML models like SVR, RF and QNN are not biased towards variables with larger scales.
 
+
+ 
+
+![image](https://github.com/user-attachments/assets/e2ab396e-8290-4743-8438-468d23d4ca03)
+
  
 Fig.2. Real-Time Data Flow Diagram
 
@@ -50,18 +58,24 @@ The above-mentioned Fig.2 represents the Data Flow Diagram in which it depicts t
 
 Three main models were implemented to predict dynamic object trajectories and identify potential breaches in the data link network.
 SVR was implemented in MATLAB due to its efficient handling of high-dimensional, non-linear datasets. By leveraging kernel functions, SVR was able to predict the future positions of dynamic objects with high accuracy, even in the presence of small amounts of noise. This article highlights the use of kernel functions to handle non-linearity, which is crucial for trajectory prediction of dynamic objects in real time. SVR makes appropriate choice for stable systems where data corruption or loss is minimal.
- 
+
+ <img width="335" alt="image" src="https://github.com/user-attachments/assets/d1be1939-a2db-4606-abfd-c91ecbef17fa">
+
 Fig.3. SVR Performance in Monitoring
 
 
 RF was implemented in python using the scikit-learn library. It excelled in scenarios where the dataset was longer or more complex, handling missing data effectively through its ensemble structure. The RF model was able to capture complex relationships between variables and made robust predictions in highly dynamic environments. RF aggregates predictions from multiple decision trees to improve accuracy.  The ensemble method helps avoid overfitting, which can be more challenging with ground data.
 
- 
+
+ <img width="337" alt="image" src="https://github.com/user-attachments/assets/cffa2096-3b18-4bff-9486-906972d0066d">
+
 Fig.4. RF Performance in Monitoring
 
 The QNN model was implemented using PennyLane Quantum, a quantum machine learning library. QNN leveraged quantum states (qubits) to process multiple possible outcomes simultaneously, significantly reducing computation time.
 
- 
+
+ <img width="332" alt="image" src="https://github.com/user-attachments/assets/80612ea5-f9c8-4f2e-b210-ce124e288f27">
+
 Fig.5. Quantum Neural Network (QNN) Circuit
 
 The above Fig.5. is the quantum circuit depicted applies rotations around the X and Y axis (denoted Rx and Ry) to qubits q0 and q1, followed by a controlled-X (CNOT) gate between q0 and q1, to entangle the qubits and manipulate their states in a quantum neural network context.
@@ -69,7 +83,8 @@ The above Fig.5. is the quantum circuit depicted applies rotations around the X 
 Although it was optimized for real-time use in scenarios with high data throughput. The quantum nature of the model enabled faster computations, making it as best-choice in dynamic environments. 
 
 
- 
+ <img width="339" alt="image" src="https://github.com/user-attachments/assets/c3a3665d-d08e-4251-99e3-5054efd28035">
+
 Fig.6. QNN Performance in Monitoring
 The final stage of the project involved integrating the QNN model into a graphical user interface (GUI) for real-time trajectory monitoring. The GUI, developed using the React.js and Python, provided a live visualization of dynamic object paths, allowing defence operators to track movements and detect breaches in real-time. The GUI was designed to handle high-frequency data streams, displaying alerts when potential breaches were detected based on trajectory deviations.
 
@@ -87,11 +102,15 @@ QNN	0.97	0.94	97.2
 
 SVR achieved an accuracy of 96.5% in predicting the dynamic object’s trajectory, demonstrating its ability to handle complex, non-linear data relationships. Its main limitation was computational efficiency, as it required more time to process larger datasets.
 
+<img width="297" alt="image" src="https://github.com/user-attachments/assets/191afa41-31cc-42db-a0bc-a6a7f5a61468">
 
  
 Fig.9. Models Accuracy Score
 
 Random Forest achieved an accuracy of 95.8% and demonstrated robust performance even in noisy and incomplete datasets. Its ability to handle large-scale data made it suitable for applications with high data variability, such as path guidance systems.
+
+<img width="284" alt="image" src="https://github.com/user-attachments/assets/6f7b9c9f-3da7-4594-b4e6-47487e286bd5">
+<img width="284" alt="image" src="https://github.com/user-attachments/assets/00a5eb4c-8e82-4202-a720-15d26c5b6cbf">
 
 
   
@@ -101,17 +120,20 @@ Fig.7,8. Models Precision & Recall Score
 QNN, while achieving a slightly lower accuracy of 97.2% excelled more robust and real-time processing. The quantum nature of the model made it more robust and efficient, making it ideal for scenarios where quick decisions are critical, such as in breach detection and trajectory monitoring.
 
 
-  
+  <img width="307" alt="image" src="https://github.com/user-attachments/assets/3e081ae3-8ac6-41df-b4a2-2464d892bdff">
+
 Fig.10. QNN Model’s Regression Line
 
 
+<img width="288" alt="image" src="https://github.com/user-attachments/assets/cb158347-932f-4edd-b778-3f453659c8b0">
 
  
 Fig.11. Real-Time Data Animation
 
 The above Fig.11 represents the Trajectory path of the Dynamic Object and Target with 
 respective to the range and altitude.
-    The GUI provided real-time visualization of dynamic object trajectories, utilizing QNN’s high-speed computation capabilities to alert all the operators of potential breaches. The 3D visualizations created using MATLAB gave defence personnel a comprehensive view of object paths, improving decision-making in real-time 
+
+The GUI provided real-time visualization of dynamic object trajectories, utilizing QNN’s high-speed computation capabilities to alert all the operators of potential breaches. The 3D visualizations created using MATLAB gave defence personnel a comprehensive view of object paths, improving decision-making in real-time 
 scenarios.
 
 
