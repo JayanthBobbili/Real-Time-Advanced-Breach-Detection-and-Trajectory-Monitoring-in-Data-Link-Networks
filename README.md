@@ -5,8 +5,7 @@ REAL-TIME ADVANCED BREACH DETECTION AND TRAJECTORY MONITORING IN DATA LINK NETWO
 CONTRIBUTORS : Bobbili Sai Jayanth, Charan Sai Nettam 
 
 PROJECT MANAGER : Jagadish Prasad (Senior Scientist- 'F', DRDO-RCI, Hyderabad)
-Graphic Era Deemed to be University, Dehradun, Uttarakhand, India
-5Research Centre Imarat (RCI). DRDO, Hyderabad, Telangana, India
+
 
 Abstract: In this article, we have proposed a real-time system for breach detection and for trajectory monitoring in the data link networks for enhanced propulsion and combustion systems compliant with the MIL-STD 1553 standard. Using the advanced machine learning models – Support Vector Regression (SVR), Random Forest (RF), and Quantum Neural Networks (QNN) – this research insists to predict object trajectories and identifies the breach in communication links. The system in which it integrates the temporal gaps of missing value imputation, real-time processing and high-precision predictive analytics. Among these models, QNN demonstrated the best performance in high-throughput scenarios, ideal for real-time Graphical User Interface (GUI) applications. This research provides key insights into how these models enhance the operational capabilities of these propulsion and combustion systems, especially in aerospace applications.
 
